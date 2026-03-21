@@ -13,7 +13,7 @@ export const TodoInfo = ({ todo }) => {
         {title}
       </h2>
 
-      <UserInfo user={user} />
+      {user && <UserInfo user={user} />}
       <p className="TodoInfo__status" data-cy="TodoStatus">
         {completed ? 'Completed' : 'In progress'}
       </p>
